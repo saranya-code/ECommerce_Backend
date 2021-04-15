@@ -1,0 +1,28 @@
+{
+  "name": "ecommerce_backend",
+  "version": "1.0.0",
+  "description": "Build the back end for an E-Commerce site using ORM",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saranya-code/ECommerce_Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saranya-code/ECommerce_Backend/issues"
+  },
+  "homepage": "https://github.com/saranya-code/ECommerce_Backend#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.0.0",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
+  }
+}
