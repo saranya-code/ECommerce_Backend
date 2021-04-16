@@ -1,0 +1,38 @@
+[
+    {
+        "product_name":"Shirt",
+        "price":"20",
+        "stock":"5",
+        "category_id": 1
+    },
+    {
+        "product_name":"T-shirts",
+        "price":"5",
+        "stock":"8",
+        "category_id": 2
+    },
+    {
+        "product_name":"Jeans",
+        "price":"40",
+        "stock":"10",
+        "category_id": 3
+    },
+    {
+        "product_name":"Jogger",
+        "price":"20",
+        "stock":"3",
+        "category_id": 4
+    },
+    {
+        "product_name":"leggins",
+        "price":"10",
+        "stock":"100",
+        "category_id": 3
+    },
+    {
+        "product_name":"shorts",
+        "price":"20",
+        "stock":"3",
+        "category_id": 4
+    }
+]

@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 
 class Product extends Model {}
 
-Category.init(
+Product.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -31,6 +31,13 @@ Category.init(
           isNumeric: true
         }, 
     },
+    category_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'category',
+        key: 'id',
+      }
+    }
   },
   {
     sequelize,
