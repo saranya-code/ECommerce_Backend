@@ -41,9 +41,10 @@ router.put('/:id', async (req, res) => {
     try {
         const productData = await Product.update(
             {
-                product_name: req.body.productName, 
+                product_name: req.body.product_name, 
                 price: req.body.price,
-                stock: req.body.stock        
+                stock: req.body.stock ,
+                category_id: req.body.category_id         
             },
             {
                 where:{
@@ -66,12 +67,6 @@ router.delete('/:id', async (req, res) => {
                 id: req.params.id
             },
         });
-
-        if (!productData) {
-            res.status(404).json({ message: 'No Product found with that id!' });
-            return;
-          }
-
         res.status(200).json(productData);
     } catch (err){
         res.status(500).json(err);
